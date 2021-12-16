@@ -90,12 +90,9 @@ section {
 
 
 @media only screen and (max-width: 600px) {
-    body {
-        height: 160vh;
-    }
     div {
-      width: 80%;
-      padding: 10px;
+        width: 80%;
+        padding: 10px;
     }
     h1 {
         font-size: 40px;
