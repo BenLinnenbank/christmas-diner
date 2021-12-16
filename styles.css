@@ -30,7 +30,7 @@ h1 {
 }
 
 img {
-    height: 50%;
+    width: 300px;
     animation: grow-and-turn 5s alternate infinite;
 }
 
@@ -99,5 +99,8 @@ section {
     }
     a {
         font-size: 20px;
+    }
+    img {
+        width: 150px;
     }
   }
