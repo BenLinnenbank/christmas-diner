@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Christmas;
+    src: url("./assets/Christmas\ Bell\ -\ Personal\ Use.otf") format("opentype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Christmas;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-image: url(./assets/christ.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: orange;
+    text-shadow: 3px 3px 3px black;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 100px;
+    margin: 0;
+}
+
+img {
+    height: 50%;
+    animation: grow-and-turn 5s alternate infinite;
+}
+
+a {
+    text-decoration: underline;
+    font-family: Christmas;
+    color: orange;
+    font-size: 30px;
+    transition: all 1s;
+}
+
+a:hover {
+    color: green;
+}
+
+ 
+@keyframes grow-and-turn {
+    0% {
+        transform: rotateZ(0deg) scale(1.0);
+    }
+    25% {
+        transform: rotateZ(-10deg) scale(1.2);
+    }
+    50% {
+        transform: rotateZ(0deg) scale(1.0);
+    }
+    75% {
+        transform: rotateZ(10deg) scale(1.2);
+    }
+    100% {
+        transform: rotateZ(0deg) scale(1.0);
+    }
+}
+
+div {
+    height: 90%;
+    width: 50%;
+    background-color: rgba(107, 21, 21, .9);
+    box-shadow: 3px 3px 12px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+p {
+    font-family: 'Patrick Hand';
+    font-size: 25px;
+    margin: auto;
+}
+
+section {
+    font-family: 'Patrick Hand';
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    div {
+      width: 80%;
+      padding: 10px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+  }
